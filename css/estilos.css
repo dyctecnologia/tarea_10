@@ -1,0 +1,109 @@
+body {
+    font-family: 'Karantina', cursive;
+    font-size: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ENCABEZADO */
+
+#portada {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: red;
+}
+
+#portada p {
+    font-size: 80px;
+    color: #ffffff;
+}
+
+
+/*BARRA DE NAVEGACION*/
+
+#barra_de_navegacion {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+
+/*CONTENIDO PRINCIPAL*/
+
+#contenido_principal {
+    width: 100%;
+    display: flex;
+}
+
+#contenido_principal #nuestros_productos {
+    list-style: none;
+}
+
+#contenido_principal #nuestros_productos li {
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+#contenido_principal #nuestros_productos li img {
+    border: 5px solid rgb(0, 0, 0);
+    transition: border-color .3s ease-in-out;
+    width: 420px;
+    height: 300px;
+}
+
+@media (max-width: 500px) {
+    * {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+/*FORMULARIO*/
+
+#formulario {
+    display: flex;
+    color: seashell;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+#formulario #miformulario p {
+    margin: 10px;
+    padding: 1rem;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+
+#formulario #miformulario .campos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 1rem;
+}
+
+
+/*FOOTER*/
+
+#pie {
+    background-color: red;
+    padding: 10px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #ffffff;
+}
